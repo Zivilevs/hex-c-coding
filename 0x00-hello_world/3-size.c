@@ -1,4 +1,4 @@
-/*uutitlksdfj;vz\aQ3<F5>689O;]. ;*
+/**
   * main - entry point
   * Return: always 0, success
   */
