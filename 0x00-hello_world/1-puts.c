@@ -1,4 +1,6 @@
-/* puts function */
+/**
+ * main - entry point
+ */
 
 #include <stdio.h>
 
