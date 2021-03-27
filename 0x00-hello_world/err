@@ -1,8 +1,0 @@
-3-size.c: In function ‘main’:
-3-size.c:19:2: error: too few arguments to function ‘fprintf’
-   19 |  fprintf();
-      |  ^~~~~~~
-In file included from 3-size.c:6:
-/usr/include/stdio.h:326:12: note: declared here
-  326 | extern int fprintf (FILE *__restrict __stream,
-      |            ^~~~~~~
