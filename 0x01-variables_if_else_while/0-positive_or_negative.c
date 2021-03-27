@@ -1,9 +1,12 @@
+/**
+ * main - entry point
+ * Return: always 0, success
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/*
- * main - entry point
- */
+
 
 int main(void)
 {
