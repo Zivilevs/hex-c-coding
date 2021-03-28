@@ -12,18 +12,14 @@ int main(void)
 	sk = 0;
 	while (sk < 10)
 	{
+		putchar('0' + (sk % 10));
+
 		if (sk < 9)
 		{
-			putchar('0' + (sk % 10));
-			sk++;
 			putchar(',');
 			putchar(' ');
 		}
-		else
-		{
-			putchar('0' + (sk % 10));
-			sk++;
-		}
+		sk++;
 	}
 	putchar('\n');
 	return (0);
