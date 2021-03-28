@@ -14,6 +14,6 @@ int main(void)
 	{
 		putchar('0' + (sk % 10));
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
