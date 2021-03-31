@@ -1,12 +1,12 @@
 /**
  * main - entry point
- *
- * Return always 0, success
+ * Return: always 0, success
  */
 
 #include "holberton.h"
 
-int main(void){
+int main(void)
+{
 
 	_putchar(72);
 	_putchar(111);
@@ -18,5 +18,5 @@ int main(void){
 	_putchar(111);
 	_putchar(110);
 	_putchar(10);
-	return(0);
-	}
+	return (0);
+}
