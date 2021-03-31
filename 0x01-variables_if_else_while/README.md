@@ -1,1 +1,8 @@
-C language if statements and loops
+# C language. Variables, if, else, while 
+
+
+
+**Learning with Holberton hands-on projects**
+
+
+
