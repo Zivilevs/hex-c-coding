@@ -18,39 +18,39 @@ int print_last_digit(int n)
 		break;
 
 		case 1:
-			_putchar(49);
+			_putchar('1');
 		break;
 
-		case 50:
-			_putchar(50);
+		case 2:
+			_putchar('2');
 		break;
 
-		case 51:
-			_putchar(51);
+		case 3:
+			_putchar('3');
 		break;
 
 		case 4:
 			_putchar('4');
 		break;
 
-		case 53:
-			_putchar(53);
+		case 5:
+			_putchar('5');
 		break;
 
-		case 54:
-			_putchar(54);
+		case 6:
+			_putchar('6');
 		break;
 
-		case 55:
-			_putchar(55);
+		case 7:
+			_putchar('7');
 		break;
 
 		case 8:
 			_putchar('8');
 		break;
 
-		case 57:
-			_putchar(57);
+		case 9:
+			_putchar('9');
 		break;
 	}
 
