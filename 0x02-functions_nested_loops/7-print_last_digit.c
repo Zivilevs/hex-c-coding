@@ -1,15 +1,17 @@
 /**
  * print_last_digit -  a function that prints the last digit of a number.
- * Using _putchar, which basiclly is write().
+ * Using _putchar, which basiclly is write(). 1. only absolute numbers.
+ * 2. modulus for last digit. 3. c captures decimal number for ascii character,
+ * that _putchar prints to stdout.
  * @n: is integer
- * Return: always 0, success
+ * Return: decimal for ascii character.
  */
 
 #include "holberton.h"
 
 int print_last_digit(int n)
 {
-	int a, b;
+	int a, b, c;
 
 	if (n < 0)
 	{
@@ -20,47 +22,7 @@ int print_last_digit(int n)
 		a = n;
 	}
 	b = (a % 10);
-	switch (b)
-	{
-		case 0:
-			_putchar('0');
-		break;
-
-		case 1:
-			_putchar('1');
-		break;
-
-		case 2:
-			_putchar('2');
-		break;
-
-		case 3:
-			_putchar('3');
-		break;
-
-		case 4:
-			_putchar('4');
-		break;
-
-		case 5:
-			_putchar('5');
-		break;
-
-		case 6:
-			_putchar('6');
-		break;
-
-		case 7:
-			_putchar('7');
-		break;
-
-		case 8:
-			_putchar('8');
-		break;
-
-		case 9:
-			_putchar('9');
-		break;
-	}
+	c = (b + '0');
+	_putchar(c);
 	return (b);
 }
