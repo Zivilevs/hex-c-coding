@@ -1,5 +1,6 @@
 /**
- * print_last_digit -  a function that prints the last digit of a numberr.
+ * print_last_digit -  a function that prints the last digit of a number.
+ * Using _putchar, which basiclly is write().
  * @n: is integer
  * Return: always 0, success
  */
@@ -8,10 +9,18 @@
 
 int print_last_digit(int n)
 {
-	int a;
+	int a, b;
 
-	a = (n % 10);
-	switch (a)
+	if (n < 0)
+	{
+		a = (n * -1);
+	}
+	else
+	{
+		a = n;
+	}
+	b = (a % 10);
+	switch (b)
 	{
 		case 0:
 			_putchar('0');
@@ -53,6 +62,5 @@ int print_last_digit(int n)
 			_putchar('9');
 		break;
 	}
-
-	return (a);
+	return (b);
 }
