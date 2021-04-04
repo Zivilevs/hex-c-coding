@@ -21,8 +21,9 @@ void times_table(void)
 		_putchar(',');
 
 		int p;
-
-		for (p = 1; p < 10; p++)
+		
+		p = 1;
+		for (; p < 10; p++)
 		{
 			char decimal, last_digit;
 			int m;
