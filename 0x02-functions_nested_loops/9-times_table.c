@@ -20,7 +20,9 @@ void times_table(void)
 		_putchar('0');
 		_putchar(',');
 
-		for (int p = 1; p < 10; p++)
+		int p;
+
+		for (p = 1; p < 10; p++)
 		{
 			char decimal, last_digit;
 			int m;
