@@ -2,7 +2,7 @@
  * times_table - a function prints the 9 times table, starting with 0.
  * @decimal:decimal number
  * @last_digit:last digit
- * @p:position number in line
+ * @po:position number in line
  * Nested WHILE lnd for loops, functions and IF, ternary operator.
  * Return: void
  */
@@ -29,7 +29,7 @@ void times_table(void)
 
 			m = p * line;
 			last_digit = m % 10;
-			decimal = m > 10 ? m / 10 : ' ';
+			decimal = m >= 10 ? m / 10 : ' ';
 
 			print_number(decimal, last_digit, p);
 		}
@@ -42,7 +42,7 @@ void times_table(void)
  * print_number - a function to print formated number.
  * @decimal:decimal number
  * @last_digit:last digit
- * @p:position number in line
+ * @po:position number in line
  */
 
 void print_number(int decimal, int last_digit, int po)
