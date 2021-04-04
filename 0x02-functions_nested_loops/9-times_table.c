@@ -17,12 +17,11 @@ void times_table(void)
 
 	while (line < 10)
 	{
+		int p = 1;
+
 		_putchar('0');
 		_putchar(',');
 
-		int p;
-		
-		p = 1;
 		for (; p < 10; p++)
 		{
 			char decimal, last_digit;
