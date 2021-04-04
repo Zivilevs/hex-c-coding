@@ -9,7 +9,7 @@
 
 #include "holberton.h"
 
-void print_number(int decimal, int last_digit, int p);
+void print_number(int decimal, int last_digit, int po);
 
 void times_table(void)
 {
@@ -46,16 +46,16 @@ void times_table(void)
  * @p:position number in line
  */
 
-void print_number(int decimal, int last_digit, int p)
+void print_number(int decimal, int last_digit, int po)
 {
-	if ((decimal != ' ') && (p != 9))
+	if ((decimal != ' ') && (po != 9))
 	{
 		_putchar(' ');
 		_putchar(decimal + '0');
 		_putchar(last_digit + '0');
 		_putchar(',');
 	}
-	else if ((decimal == ' ') && (p == 9))
+	else if ((decimal == ' ') && (po == 9))
 	{
 		_putchar(' ');
 		_putchar(' ');
@@ -69,7 +69,7 @@ void print_number(int decimal, int last_digit, int p)
 		_putchar(',');
 
 	}
-	else if (p == 9)
+	else if (po == 9)
 	{
 		_putchar(' ');
 		_putchar(decimal + '0');
