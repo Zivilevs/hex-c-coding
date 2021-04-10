@@ -43,6 +43,7 @@ void print_diagonal(int n)
 void print_space(int s)
 {
 	int i = 0;
+
 	for (; i < s; i++)
 	{
 		_putchar(' ');
