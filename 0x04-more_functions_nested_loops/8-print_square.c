@@ -1,4 +1,3 @@
- 
 /**
  * print_square - a function that prints square followed by new line.
  *
