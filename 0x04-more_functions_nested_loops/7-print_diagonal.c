@@ -19,12 +19,12 @@ void print_diagonal(int n)
 		{
 			if (i == 0)
 			{
-				_putchar('/');
+				_putchar('\\');
 			}
 			else
 			{
 				print_space(i);
-				_putchar('/');
+				_putchar('\\');
 			}
 			_putchar('\n');
 		}
