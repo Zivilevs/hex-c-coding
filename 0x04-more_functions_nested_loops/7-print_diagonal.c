@@ -42,7 +42,8 @@ void print_diagonal(int n)
 
 void print_space(int s)
 {
-	for (int i = 0; i < s; i++)
+	int i = 0;
+	for (; i < s; i++)
 	{
 		_putchar(' ');
 	}
