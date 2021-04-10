@@ -1,4 +1,0 @@
-# Debugging
-
-Some debugging practices.
-
