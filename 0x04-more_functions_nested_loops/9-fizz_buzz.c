@@ -3,7 +3,6 @@
  * Return: always 0
  */
 
-#include "holberton.h"
 #include <stdio.h>
 
 int main(void)
@@ -31,7 +30,7 @@ int main(void)
 		}
 		i++;
 	}
-	_putchar('\n');
+	printf("\n");
 	return (0);
 }
 
