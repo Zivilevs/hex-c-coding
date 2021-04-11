@@ -14,4 +14,5 @@
 
 3. Kernel style code. Checked using 
 
+   [https://github.com/holbertonschool/Betty]: Betty
    [Betty]: https://github.com/holbertonschool/Betty/
