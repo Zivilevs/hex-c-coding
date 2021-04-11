@@ -12,7 +12,4 @@
 
 2. Allowed editors Vim or Emac (my chose - Vim)
 
-3. Kernel style code. Checked using 
-
-   [https://github.com/holbertonschool/Betty]: Betty
-   [Betty]: https://github.com/holbertonschool/Betty/
+3. Kernel style code. Checked using  Betty [https://github.com/holbertonschool/Betty] 
