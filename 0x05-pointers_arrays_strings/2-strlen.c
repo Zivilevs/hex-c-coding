@@ -2,7 +2,7 @@
  * _strlen - a function that swaps the values of two integers.
  *
  * @s: a pointer to a char
- * Rreturn: string length
+ * Return: string length
  */
 
 #include "holberton.h"
