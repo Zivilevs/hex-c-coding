@@ -1,5 +1,5 @@
 /**
- * _strlen - a function that swaps the values of two integers.
+ * _strlen - a function that returns the length of string.
  *
  * @s: a pointer to a char
  * Return: string length
