@@ -6,6 +6,7 @@
  */
 
 #include "holberton.h"
+
 void print_rev(char *s)
 {
 	int i = 0;
@@ -14,10 +15,15 @@ void print_rev(char *s)
 	{
 		i++;
 	}
-	while (i >= 0)
+
+	int j;
+
+	j = i - 1;
+
+	while (j >= 0)
 	{
-		_putchar(*(s + i));
-		--i;
+		_putchar(*(s + j));
+		j--;
 	}
 	_putchar('\n');
 }
