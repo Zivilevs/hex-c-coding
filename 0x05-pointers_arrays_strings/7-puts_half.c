@@ -10,28 +10,31 @@
 void puts_half(char *str)
 {
 	int j = 0;
-	int a;
+	int a, i;
 
 	while (*(str + j) != '\0')
 	{
-		j++;
+		++j;
 	}
 	if (j % 2 == 0)
 	{
 		a = j / 2;
-		for (j = 0; j < a; j++)
+		i = 0;
+		while (*(str + (a + i)) != '\0')
 		{
-			_putchar(*(str + (a + j)));
+			_putchar(*(str + (a + i)));
+			i++;
 		}
 	}
 	else
 	{
 		a = j / 2;
-		for (j = 0; j < (a + 1); j++)
+		i = 0;
+		while (*(str + (a + 1 + i)) != '\0')
 		{
-			_putchar(*(str + (a + 1 + j)));
+			_putchar(*(str + (a + 1 + i)));
+			i++;
 		}
-
 	}
 	_putchar('\n');
 }
