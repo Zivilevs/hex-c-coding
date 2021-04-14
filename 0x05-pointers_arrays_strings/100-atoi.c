@@ -33,16 +33,13 @@ int _atoi(char *s)
 			}
 
 			result = result * 10 + (*(s + j) - '0');
+			
+			if (*(s + j + 1) == ' ')
+			{
+				break;
+			}
 		}
 		j++;
 	}
-	if ((result >= 2147483647) && sign == -1)
-	{
-		result = (result - 1) * -1 - 2;
-	}
-	else
-	{
-		result = result * sign;
-	}
-	return (result);
+	return (result * sign);
 }
