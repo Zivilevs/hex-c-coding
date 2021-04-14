@@ -33,7 +33,7 @@ int _atoi(char *s)
 			}
 
 			result = result * 10 + (*(s + j) - '0');
-			
+
 			if (*(s + j + 1) == ' ')
 			{
 				break;
