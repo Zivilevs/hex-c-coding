@@ -25,7 +25,7 @@ char *_strcpy(char *dest, char *src)
 	}
 	else
 	{
-		*(dest + i) = '\0'
+		*(dest + i) = '\0';
 	}
 
 	return (dest);
