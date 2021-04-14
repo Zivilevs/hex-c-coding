@@ -10,7 +10,7 @@
 
 int _atoi(char *s)
 {
-	int i, j, result;
+	int i, j, result, sign;
 
 	j = 0;
 	i = 0;
@@ -21,18 +21,20 @@ int _atoi(char *s)
 		i++;
 	}
 
+	sign = 1;
+
 	while (j < i)
 	{
-		if (*(s + j) > 48 && *(s + j) < 58)
+		if (*(s + j) > 47 && *(s + j) < 58)
 		{
-			if (*(s + j - 1) == '-')
+			if (*(s + (j - 1)) == '-')
 			{
-				result = result * 10 + (*(s + j) - '0');
-				result *= -1;
+				sign = -1;
 			}
+
 			result = result * 10 + (*(s + j) - '0');
 		}
 		j++;
 	}
-	return (result);
+	return (result * sign);
 }
