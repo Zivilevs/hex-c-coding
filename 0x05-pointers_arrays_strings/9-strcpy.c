@@ -7,20 +7,26 @@
  * FYI: The standard library provides a similar function: strcpy.
  */
 
-#include <stdio.h>
+
 #include "holberton.h"
 
 char *_strcpy(char *dest, char *src)
 {
 	int i;
-	i = 0;
-	
-	do 
+
+	for (i = 0; *(src + i) != '\0'; i++)
 	{
 		*(dest + i) = *(src + i);
-		i++;
 	}
-	while (*(src + i) != '\0');
+
+	if (i != 0)
+	{
+		*(dest + i + 1) = *(src + i + 1);
+	}
+	else
+	{
+		*(dest + i) = '\0'
+	}
 
 	return (dest);
 }
