@@ -32,6 +32,6 @@ int _atoi(char *s)
 			}
 			result = result * 10 + (*(s + j) - '0');
 		}
-	{
+	}
 	return (result);
 }
