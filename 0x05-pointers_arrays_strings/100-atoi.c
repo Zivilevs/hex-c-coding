@@ -36,7 +36,7 @@ int _atoi(char *s)
 		}
 		j++;
 	}
-	if (result >= 2147483647) && sign == -1 
+	if ((result >= 2147483647) && sign == -1)
 	{
 		result = (result - 1) * -1 - 2;
 	}
