@@ -61,7 +61,7 @@ int checkPal(char *s, int i, int len)
 	{
 		return (0);
 	}
-	if (i < len - 1)
+	if (i < len + 1)
 	{
 		checkPal(s, i + 1, len - 1);
 	}
