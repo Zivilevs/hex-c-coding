@@ -1,7 +1,8 @@
 /**
  * _puts_recursion - function that prints a string followed by new line.
  * @s: a pointer to a char
- * *s is value of first element in str, if it is not \0, then print that element
+ * *s is value of first element in str, if it is not \0,
+ * then print that element
  * and move the pointer to next element s + 1 == *(s + 1).
  * Auth: Zivile V. Silveira
  */
