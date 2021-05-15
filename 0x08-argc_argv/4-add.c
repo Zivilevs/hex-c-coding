@@ -1,18 +1,21 @@
 /**
  * main - adds 2 positive numbers
- * @argc: count of arguments
- * @argv: array of arguments
+ * intlen - recursive to calculate digits in number
+ * @c: integer
  * Return: integer
  * Auth: Zivile V. Silveira
  */
 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
+int intlen(int c);
 int main(int argc, char **argv)
 {
-	int result, i;
+	int result, i, a, b;
 
 	result = 0;
 
@@ -23,7 +26,10 @@ int main(int argc, char **argv)
 	}
 	for (i = 1; i < argc; i++)
 	{
-		if (atoi(argv[i]) == 0)
+		a = strlen(argv[i]);
+		b = intlen(atoi(argv[i]));
+
+		if (a != b)
 		{
 			printf("Error\n");
 			return (0);
@@ -33,3 +39,20 @@ int main(int argc, char **argv)
 	printf("%d\n", result);
 	return (0);
 }
+
+/**
+ * intlen - recursive to calculate digits in number
+ * @c: integer
+ * Return: integer
+ */
+
+int intlen(int c)
+{
+	if (c == 0)
+	{
+		return (0);
+	}
+	return (1 + intlen(c / 10));
+}
+
+
