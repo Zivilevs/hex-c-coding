@@ -10,8 +10,10 @@ int main(void)
 {
     int r;
 
-    r = is_palindrome("l");
-    printf("%d\n", r);
+    r = is_palindrome("abcdecba");
+    printf("%d\n\n", r);
+    r = is_palindrome("el");
+    printf("%d\n\n", r);
     r = is_palindrome("level");
     printf("%d\n", r);
     r = is_palindrome("redder");

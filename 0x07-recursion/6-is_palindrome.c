@@ -53,17 +53,13 @@ int lengthPal(char *s)
 
 int checkPal(char *s, int i, int len)
 {
-	if (i  == len)
-	{
-		return (1);
-	}
-	if (*(s + i) != *(s + len))
+	if (s[i] != s[len])
 	{
 		return (0);
 	}
-	if (i < len + 1)
+	if ((i == len) || (i + 1) == len)
 	{
-		checkPal(s, i + 1, len - 1);
+		return (1);
 	}
-	return (1);
+	return (checkPal(s, i + 1, len - 1));
 }
