@@ -35,6 +35,6 @@ char *_strdup(char *str)
 		{
 			arr[j] = *(temp + j);
 		}
+		return (arr);
 	}
-	return (arr);
 }
