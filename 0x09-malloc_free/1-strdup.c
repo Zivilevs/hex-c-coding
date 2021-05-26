@@ -16,8 +16,12 @@ char *_strdup(char *str)
 	char *arr;
 	char *temp;
 
-	temp = str;
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
+	temp = str;
 	i = 0;
 	while (*str != '\0')
 	{
@@ -25,16 +29,9 @@ char *_strdup(char *str)
 		i++;
 	}
 	arr = malloc(sizeof(char) * (i + 1));
-	if ((arr == NULL) || (i == 0))
+	for (j = 0; j < i; j++)
 	{
-		return (NULL);
+		arr[j] = *(temp + j);
 	}
-	else
-	{
-		for (j = 0; j < i; j++)
-		{
-			arr[j] = *(temp + j);
-		}
-		return (arr);
-	}
+	return (arr);
 }
