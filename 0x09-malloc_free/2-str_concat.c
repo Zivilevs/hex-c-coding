@@ -56,7 +56,10 @@ char *str_concat(char *s1, char *s2)
 		}
 		else
 		{
-			arr = _strdup(temp1);
+			for (f = 0; f < i; f++)
+			{
+				arr[f] = *(temp1 + f);
+			}
 			for (f = 0; f < j; f++)
 			{
 				arr[i + f] = *(temp2 + f);
