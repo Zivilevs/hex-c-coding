@@ -29,7 +29,9 @@ char *str_concat(char *s1, char *s2)
 	}
 	else if ((s1 == NULL) && (s2 == NULL))
 	{
-		return (NULL);
+		arr = malloc(sizeof(char) * 0);
+		arr[0] = '\0';
+		return (arr);
 	}
 	else
 	{
@@ -59,8 +61,8 @@ char *str_concat(char *s1, char *s2)
 			{
 				arr[i + f] = *(temp2 + f);
 			}
+			return (arr);
 		}
-		return (arr);
 	}
 }
 
