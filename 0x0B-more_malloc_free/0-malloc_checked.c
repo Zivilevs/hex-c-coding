@@ -1,5 +1,6 @@
 /*
  * Write a function that allocates memory using malloc.
+ * malloc_checked - function
  * @b: integer
  * Auth: Zivile V. Silveira
  */
@@ -10,7 +11,7 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *a;
+	unsigned int *a;
 
 	a = malloc(sizeof(b));
 	if (a == NULL)
