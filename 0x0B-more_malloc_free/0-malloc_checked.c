@@ -1,7 +1,7 @@
-/*
- * Write a function that allocates memory using malloc.
- * malloc_checked - function
+/**
+ * malloc_checked - a function that allocates memory and returns pointer
  * @b: integer
+ * Return: pointer
  * Auth: Zivile V. Silveira
  */
 
@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 {
 	unsigned int *a;
 
-	a = malloc(sizeof(b));
+	a = malloc(sizeof(int) * b);
 	if (a == NULL)
 	{
 		exit(98);
