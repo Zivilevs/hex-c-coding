@@ -22,24 +22,27 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		arr[0] = '\0';
 		return (arr);
 	}
-	len = length(s1);
-	arr = malloc(sizeof(char) * (len + n + 1));
-	if (arr == NULL)
+	else
 	{
-		return (NULL);
+		len = length(s1);
+		arr = malloc(sizeof(char) * (len + n + 1));
+		if (arr == NULL)
+		{
+			return (NULL);
+		}
+		for (b = 0; b < len; b++)
+		{
+			arr[b] = s1[b];
+		}
+		a = 0;
+		while ((a < n) && (s2[a] != '\0'))
+		{
+			arr[len + a] = s2[a];
+			a++;
+		}
+		arr[len + a + 1] = '\0';
+		return (arr);
 	}
-	for (b = 0; b < len; b++)
-	{
-		arr[b] = s1[b];
-	}
-	a = 0;
-	while ((a < n) && (s2[a] != '\0'))
-	{
-		arr[len + a] = s2[a];
-		a++;
-	}
-	arr[len + a + 1] = '\0';
-	return (arr);
 }
 
 /**
