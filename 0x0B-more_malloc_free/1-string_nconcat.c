@@ -28,12 +28,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (b = 0; b <= len; b++)
+	for (b = 0; b < len; b++)
 	{
 		arr[b] = s1[b];
 	}
 	a = 0;
-	while (a < n && s2[a] != '\0')
+	while ((a < n) && (s2[a] != '\0'))
 	{
 		arr[len + a] = s2[a];
 		a++;
