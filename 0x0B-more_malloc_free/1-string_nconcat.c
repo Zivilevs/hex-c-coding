@@ -14,35 +14,40 @@ unsigned int length(char *str);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *arr;
-	unsigned int len, a, b;
+	unsigned int len, a, b, i;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		arr = malloc(sizeof(char) * 0);
-		arr[0] = '\0';
-		return (arr);
+		s1 = "";
 	}
-	else
+	if (s2 == NULL)
 	{
-		len = length(s1);
-		arr = malloc(sizeof(char) * (len + n + 1));
-		if (arr == NULL)
-		{
-			return (NULL);
-		}
-		for (b = 0; b < len; b++)
-		{
-			arr[b] = s1[b];
-		}
-		a = 0;
-		while ((a < n) && (s2[a] != '\0'))
-		{
-			arr[len + a] = s2[a];
-			a++;
-		}
-		arr[len + a + 1] = '\0';
-		return (arr);
+		s2 = "";
 	}
+	len = length(s1);
+	arr = malloc(sizeof(char) * (len + n + 2));
+
+	if (arr == NULL)
+	{
+		return (NULL);
+	}
+	i  = 0;
+	for (b = 0; b < len; b++)
+	{
+		arr[i] = s1[b];
+		i++;
+	}
+	for (a = 0; a < n; a++)
+	{
+		arr[i] = s2[a];
+		i++;
+		if (s2[a] == '\0')
+		{
+			return (arr);
+		}
+	}
+	arr[i] = '\0';
+	return (arr);
 }
 
 /**
@@ -53,12 +58,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 unsigned int length(char *str)
 {
-	unsigned int a;
+	unsigned int i;
 
-	a = 0;
-	while (str[a] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		a++;
+		i++;
 	}
-	return (a);
+	return (i);
 }
