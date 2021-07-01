@@ -12,23 +12,24 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int  *arr;
+	void *ptr;
 	unsigned int i;
 
 	if (size == 0 || nmemb == 0)
 	{
 		return (NULL);
 	}
-	arr = malloc(nmemb * size);
+	ptr = malloc(nmemb * size);
 
-	if (arr == NULL)
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
+	char *ptr2 = (char *)ptr;
 
 	for (i = 0; i < nmemb; i++)
 	{
-		arr[i] = 0;
+	*ptr2++ = 0;
 	}
-	return (arr);
+	return (ptr);
 }
